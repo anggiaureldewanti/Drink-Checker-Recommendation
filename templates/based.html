@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Base</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container-static">
+        <h1>SELECT BASED</h1>
+        <form action="{{ url_for('select_based') }}" method="post">
+            <div class="form-group">
+                <select class="form-control" id="base" name="based" required>
+                    <option value="coffee">Coffee</option>
+                    <option value="milk">Milk</option>
+                    <option value="mojito">Mojito</option>
+                    <option value="tea">Tea</option>
+                </select>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>

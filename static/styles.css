@@ -1,0 +1,281 @@
+/* Base styles */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://png.pngtree.com/background/20230516/original/pngtree-coffee-shop-with-many-wooden-tables-and-chairs-picture-image_2611848.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+/* Container styling */
+/* .container {
+    max-width: 600px;
+    margin-top: 240px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);   
+} */
+
+/* .main-container {
+    width: 100%;
+} */
+
+/* Section styles */
+.section {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.section-form {
+    background: url('path_to_your_background_image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section-info {
+    background-color: #ffffff;
+}
+
+/* Container styles */
+.container-start {
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+.container-static {
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 230px;
+    margin-left: 310px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+
+.container-footer {
+    text-align: center;
+    max-width: 1500px;
+    padding: 20px;
+    background-color:#000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+/* container */
+.section-info .container {
+    background-color: #ffffff;
+    color: #000000; /* Ensure text is readable on light background */
+    box-shadow: none; /* Remove shadow for info section */
+}
+
+.container-drink {
+    max-width: 600px;
+    margin-top: 70px;
+    margin-left: 310px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);   
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(192, 192, 73);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Form and button styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ceab77;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(152, 118, 99);
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #e9ecef;
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Link styling */
+a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Custom CSS for the result page */
+.drink-container {
+    margin-top: 30px;
+    max-height: 380px; /* Adjust based on your design */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.drink {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+}
+
+.drink-image img {
+    max-width: 200px; /* Set a fixed width for the image */
+    height: auto;
+    border-radius: 5px;
+}
+
+.drink-details {
+    flex: 1; /* Allow the details section to take the remaining space */
+    margin-left: 20px; /* Add some space between the image and the details */
+}
+
+.drink-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.drink-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Center and style the link as a button */
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.center-button-container a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ceab77;
+    padding: 10px 20px; /* Adjust padding for button size */
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+.center-button-container a:hover {
+    background-color: rgb(152, 118, 99);  
+}
+
+
+
+/* Custom select styling */
+.form-control {
+    color: #000000; /* Text color */
+    background-color: #cabaae; /* Background color */
+}
+
+/* Remove default focus styles */
+.form-control:focus {
+    color: #000000; /* Text color on focus */
+    background-color: #cabaae; /* Background color on focus */
+    border-color: #000000; /* Border color on focus */
+    outline: 0; /* Remove outline */
+    box-shadow: none; /* Remove box shadow */
+}
+
+/* Custom select option styling */
+.form-control option {
+    color: #000000; /* Text color for unselected options */
+    background-color: #ffffff; /* Background color for unselected options */
+}
+
+.form-control option:checked {
+    color: #000000; /* Text color for selected option */
+    background-color: #cabaae; /* Background color for selected option */
+}
+
+.minum-notfound{
+    color: #ffffff;
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

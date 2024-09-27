@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container-drink">
+        <h1>Drink Recommendations</h1>
+        <div class="drink-container">
+            {% if recommendations %}
+                {% for drink in recommendations %}
+                    <div class="drink">
+                        <div class="drink-image">
+                            <img src="{{ url_for('static', filename='images/' + drink.image) }}" alt="{{ drink.name }}">
+                        </div>
+                        <div class="drink-details">
+                            <h2 class="drink-title">{{ drink.name }}</h2>
+                            <p class="drink-description">{{ drink.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p class="minum-notfound">Tidak ada minuman yang cocok dengan preferensi Anda.</p>
+            {% endif %}
+        </div>
+        <div class="center-button-container">
+            <a href="{{ url_for('start') }}">Check Drink Again</a>
+        </div>
+    </div>
+</body>
+</html>

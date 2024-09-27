@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Temperature</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container-static">
+        <h1>SELECT TEMPERATURE</h1>
+        <form action="{{ url_for('select_suhu') }}" method="post">
+            <div class="form-group">
+                <!-- <label for="temperature">Select Temperature:</label> -->
+                <select class="form-control" id="temperature" name="suhu" required>
+                    <option value="ice">Ice</option>
+                    <option value="hot">Hot</option>
+                </select>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+    
+</body>
+</html>

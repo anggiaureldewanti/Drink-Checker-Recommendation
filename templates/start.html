@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="main-container">
+        <div class="section section-form">
+            <div class="container-start">
+                <h1>Drink Checker App</h1>
+                <form action="{{ url_for('suhu') }}">
+                    <button type="submit">Start</button>
+                </form>
+            </div>
+        </div>
+        <div class="section section-info">
+            <div class="container">
+                <h2>About This App</h2>
+                <p>This app helps you to find the perfect drink based on your preferences. You can select the temperature, base, and taste, and we'll recommend drinks that match your choices.</p>
+                <h2>How to Use</h2>
+                <p>Follow these simple steps:</p>
+                <ol>
+                    <li>Click the "Start" button above to begin.</li>
+                    <li>Select your preferred temperature for the drink (hot or iced).</li>
+                    <li>Choose the base ingredient (coffee, tea, milk, mojito).</li>
+                    <li>Select your preferred taste (sweet, bitter, sour).</li>
+                    <li>View the recommendations based on your selections.</li>
+                </ol>
+            </div>
+        </div>
+        <footer>
+            <div class="container-footer">
+                <p>&copy; 2024 Drink Checker App. Developed by Team Name.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
